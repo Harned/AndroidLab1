@@ -9,8 +9,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.sp
 
-object AppTheme {
+object ThemeSettings {
     object BgColors {
+        val primary = Color(0xff050b18)
+        val divider = Color(0xFF1A1F29)
     }
 
     object ButtonColors {
@@ -18,7 +20,7 @@ object AppTheme {
     }
 
     object TextColors {
-
+        val white = Color(0xFFEEF2FB)
     }
 
     object TextStyle {

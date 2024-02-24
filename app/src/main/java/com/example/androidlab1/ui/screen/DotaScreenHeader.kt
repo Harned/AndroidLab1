@@ -40,9 +40,7 @@ fun DotaScreenHeader(
 }
 
 @Composable
-private fun DotaLogo(
-    modifier: Modifier = Modifier
-) {
+private fun DotaLogo() {
     Box(
         modifier = Modifier.size(88.dp, 95.dp)
     ) {
@@ -73,7 +71,9 @@ private fun DotaLogo(
     showSystemUi = true
 )
 fun DotaScreenHeaderPreview() {
-    Surface {
+    Surface(
+        color = Color(0xff050b18)
+    ) {
         DotaScreenHeader()
     }
 }
