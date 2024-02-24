@@ -1,4 +1,4 @@
-package com.example.androidlab1
+package com.example.androidlab1.ui.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
