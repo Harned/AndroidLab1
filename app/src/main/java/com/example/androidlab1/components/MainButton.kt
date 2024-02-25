@@ -17,6 +17,8 @@ import androidx.compose.ui.draw.blur
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.androidlab1.ui.theme.ThemeSettings
+
 @Composable
 fun MainButton(text: String,
                onClick:() -> Unit,
@@ -29,7 +31,7 @@ fun MainButton(text: String,
         Button(
             onClick = onClick,
             colors = ButtonDefaults.buttonColors(
-                Color(0xfff4d144)
+                ThemeSettings.ButtonColors.primary
             ),
             modifier = Modifier
                 .height(64.dp)
@@ -47,7 +49,7 @@ fun MainButton(text: String,
                 .blur(radius = 40.dp)
                 .size(311.dp, 50.dp)
                 .background(
-                    color = Color(0x38F4D144),
+                    color = ThemeSettings.ButtonColors.blur,
                     shape = RoundedCornerShape(size = 10.dp)
                 )
         )

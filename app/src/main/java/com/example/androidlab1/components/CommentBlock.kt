@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.androidlab1.Comment
 import com.example.androidlab1.R
+import com.example.androidlab1.ui.theme.ThemeSettings
 
 @Composable
 fun CommentBlock(
@@ -41,7 +42,7 @@ fun CommentBlock(
                 fontSize = 12.sp,
                 lineHeight = 20.sp,
                 fontWeight = FontWeight(400),
-                color = Color(0xFFA8ADB7),
+                color = ThemeSettings.TextColors.comment,
 
                 letterSpacing = 0.5.sp,
             )
@@ -71,7 +72,7 @@ private fun CommentHeader(comment: Comment) {
                 style = TextStyle(
                     fontSize = 16.sp,
                     fontWeight = FontWeight(400),
-                    color = Color(0xFFFFFFFF),
+                    color = Color.White,
                     letterSpacing = 0.5.sp,
                 ),
             )
@@ -80,7 +81,7 @@ private fun CommentHeader(comment: Comment) {
                 text = comment.date,
                 style = TextStyle(
                     fontSize = 12.sp,
-                    color = Color(0x66FFFFFF),
+                    color = ThemeSettings.TextColors.date,
                     fontWeight = FontWeight(400),
                     letterSpacing = 0.5.sp,
                 )
