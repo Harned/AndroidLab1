@@ -51,6 +51,12 @@ fun DotaScreen() {
         painterResource(id = R.drawable.dota_video_2)
     )
 
+    val chips = listOf(
+        stringResource(id = R.string.mova),
+        stringResource(id = R.string.multiplayer),
+        stringResource(id = R.string.strategy),
+    )
+
     LazyColumn(
         modifier = Modifier
             //.fillMaxHeight()
@@ -59,6 +65,18 @@ fun DotaScreen() {
     ) {
         item {
             DotaScreenHeader()
+        }
+
+        item {
+            ChipsRow(
+                items = chips,
+                modifier = Modifier
+                    .padding(
+                        top = 16.dp,
+                        bottom = 16.dp,
+                        start = 24.dp
+                    )
+            )
         }
 
         item {
